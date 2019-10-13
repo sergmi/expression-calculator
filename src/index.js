@@ -1,5 +1,19 @@
 function expressionCalculator(expr) {
-	let a = expr.split(" ");
+	let b = "";
+	let expr_length = expr.length;
+	for(i = 0; i < expr_length; i++){
+		if(expr[i]==="("){
+			b += " ( ";
+		}
+		else if(expr[i]===")"){
+			b += " ) ";
+		}
+		else {
+			b += expr[i];
+		}
+	}	
+	
+	let a = b.split(" ");
 	let open_brackets = 0;
 	let close_brackets = 0;
 	let error_division = false;
