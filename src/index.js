@@ -92,7 +92,7 @@ function expressionCalculator(expr) {
 	else{mainCalculation(0,a.length-1);}
 	
 	if(error_division === true){
-		throw new TypeError("Division by zero.");
+		throw new Error("TypeError: Division by zero.");
 		return;
 	}
 	return a[0];
