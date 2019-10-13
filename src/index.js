@@ -8,6 +8,15 @@ function expressionCalculator(expr) {
 		else if(expr[i]===")"){
 			b += " ) ";
 		}
+		else if(expr[i]==="/"){
+			b += " / ";
+		}
+		else if(expr[i]==="-"){
+			b += " - ";
+		}
+		else if(expr[i]==="*"){
+			b += " * ";
+		}
 		else {
 			b += expr[i];
 		}
